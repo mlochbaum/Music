@@ -10,6 +10,7 @@ Trans‿Note ← Load "scale"
 
 fr ← opt.freq ↩ 48000
 opt.FBytes ↩ •FBytes
+Read ← wav.Read ((∧`'.'⊸≠)⊸/⊣)∾"_"∾⊢∾".wav"˙  # 𝕨 is •name
 max ← 1-˜2⋆1-˜¯1⊑opt.fmt
 Out ← (max÷2)⊸×
 Write ← outfile wav.Write˜ ¯2500 ↓⎉1 ·{Out𝕩} ·Add (Stereo ⥊⎉1)¨
