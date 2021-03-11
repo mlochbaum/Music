@@ -6,7 +6,7 @@ Lp1‿Hp1‿Lp2‿Hp2‿Lp2q‿Hp2q‿Bp2q‿Peak‿LShelf‿HShelf‿Notch ← 
 I‿Add‿Concat‿Shift‿Rep‿Slice‿_onSlice‿Stereo‿Pan‿_norm‿Clip‿Softclip‿Fadefront‿Fadeback‿_crossfade‿Reverb ← Load "mix"
 Saw‿Triangle‿Square‿Pulse‿Sine‿White‿Brown‿Pink‿Pluck ← Load "oscillator"
 Trans‿Note ← Load "scale"
-⟨PanAP⟩ ← Load "panap"
+PanAP ← (¯1⊑≢∘⊢) ↑⎉1 (Load "panap").PanAP
 
 fr ← opt.freq ↩ 48000
 opt.FBytes ↩ •FBytes
