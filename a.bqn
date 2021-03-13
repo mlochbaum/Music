@@ -1,6 +1,6 @@
 #! /usr/bin/env dbqn
 
-⟨⟨⟩,"",•path⟩⍎•FChars"synth.bqn"
+•state•Eval•FChars"synth.bqn"
 fr ↩ opt.freq ↩ 44100
 lm←16×lb←0.4×fr
 

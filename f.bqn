@@ -1,6 +1,6 @@
 #! /usr/bin/env dbqn
 
-⟨⟨⟩,"",•path⟩⍎•FChars"synth.bqn"
+•state•Eval•FChars"synth.bqn"
 lm←16×lb←⌊⌾(÷⟜100)0.66×fr
 
 k ← 0.5  PanAP lb ↑ 1.7×1(-÷+)⋆(¯240⌽(2 Hp1 (⌊4+|∘⊏)⊸⌽)⍟40) 8×((+˝2⋆¯10‿¯15×⌜⊢)∘I × ·(1-×˜)⊸×∘Saw⥊⟜47) fr÷3

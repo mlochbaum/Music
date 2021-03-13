@@ -1,6 +1,6 @@
 #! /usr/bin/env dbqn
 
-⟨⟨⟩,"",•path⟩⍎•FChars"synth.bqn"
+•state•Eval•FChars"synth.bqn"
 lm←16×lb←0.51×fr
 Poly ← {+⟜(𝕩⊸×)´𝕨}
 ⟨Sin,Cos,ATan⟩ ← •math

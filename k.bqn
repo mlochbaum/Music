@@ -1,6 +1,6 @@
 #! /usr/bin/env dbqn
 
-⟨⟨⟩,"",•path⟩⍎•FChars"synth.bqn"
+•state•Eval•FChars"synth.bqn"
 lb←⌊⌾(÷⟜600)0.47×fr
 Out ↩ max × 4 Softclip ÷⟜2
 _e ← {∾𝔽¨⟜<}

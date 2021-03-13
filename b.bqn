@@ -1,6 +1,6 @@
 #! /usr/bin/env dbqn
 
-⟨⟨⟩,"",•path⟩⍎•FChars"synth.bqn"
+•state•Eval•FChars"synth.bqn"
 Triangle ↩ ¯0.25⊸Triangle
 ADSR ← {a‿d‿s‿r‿l: ∾⟨I a , s+(l-a+r)↑(¬s)×I-d , s×I-r⟩}
 lm←16×lb←0.52×fr
