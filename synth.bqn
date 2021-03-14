@@ -10,7 +10,7 @@ PanAP ← (¯1⊑≢∘⊢) ↑⎉1 (Load "panap").PanAP
 
 fr ← opt.freq ↩ 48000
 opt.FBytes ↩ •FBytes
-Read ← wav.Read ((∧`'.'⊸≠)⊸/⊣)∾"_"∾⊢∾".wav"˙  # 𝕨 is •name
+Read ← wav.Read ((∧`'.'⊸≠)⊸/•name)∾"_"∾∾⟜".wav"
 max ← 1-˜2⋆1-˜¯1⊑opt.fmt
 Out ← (max÷2)⊸×
 Write ← outfile wav.Write˜ ·{Out𝕩} ·Add (Stereo ⥊⎉1)¨
