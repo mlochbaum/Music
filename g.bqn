@@ -22,7 +22,7 @@ h ← ((2×lb)⌽(3 Rep (lb÷6)⊸↑)∾30⊸Rep) ((2⋆¯7×I) × (¯1+2|π⋆
 
 b ← 70 Hp1 Clip ((¯2‿¯0.5‿10‿¯4 Poly 0.75 Saw⥊⟜(Note"F#1")) × 1+0.4×·Sine·-⟜(≠÷˜fr|+´) 2.5‿¯1‿20‿¯14 Poly I) 4×lb
 fs← 1-˜(-∾⟜(⊢˝)⥊0‿19+⌜0‿7‿14+⌜0‿2‿0‿7‿5‿12‿10) Trans top
-f ← (16×lb) ↑˘ 0.56 PanAP (1.4×top) Lp1 (lb÷4) ((0.5⋆·√I∘⊣) (≠⊸⥊˜×⊢) ·•math.Sin 2.8×Saw∘/) fs
+f ← 0¨⊸(∾∾∾˜)˘ (16×lb) ↑˘ 0.56 PanAP (1.4×top) Lp1 (lb÷4) ((0.5⋆·√I∘⊣) (≠⊸⥊˜×⊢) ·•math.Sin 2.8×Saw∘/) fs
 
 Out ↩ max × 3 Softclip 0.3×20⊸Hp2
 (64×lb) Write ⟨w,n,j,k,s,h,b,f⟩
