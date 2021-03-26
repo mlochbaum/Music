@@ -35,7 +35,7 @@ Statements←{𝕊 tok‿pos:
   ⟨⊑¨p,t⟩∾io
 }
 
-Eval ← •state⊸(•BQN"•Eval")
+Eval ← (•args{(⊑𝕨)⌾(1⊸⊑)⍟(0<≠𝕨)𝕩}•state)⊸(•BQN"•Eval")
 Eval•FChars"synth.bqn"
 runLine←{
   lines ← ⟨⟩      # Tokens and predecessor line IDs
