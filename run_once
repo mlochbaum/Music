@@ -1,0 +1,4 @@
+#! /usr/bin/env dbqn
+
+⟨script⟩←•args
+(script⌾(1⊸⊑)•state) •BQN ∾ •FChars¨ "synth.bqn"‿script

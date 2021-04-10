@@ -1,6 +1,5 @@
-#! /usr/bin/env dbqn
+#! ./run_once
 
-•state•Eval•FChars"synth.bqn"
 lb←⌊⌾(÷⟜300)0.54×fr
 N←(Note"C0"){𝕩Trans(2⋆𝕨)⊢⊘×𝕗}
 

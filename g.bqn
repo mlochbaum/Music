@@ -1,6 +1,5 @@
-#! /usr/bin/env dbqn
+#! ./run_once
 
-•state•Eval•FChars"synth.bqn"
 lb←⌊⌾(÷⟜600)0.46×fr
 factorCounts ← •Import "factc.bqn"
 fa ← 10 Hp2 10 ÷˜ FactorCounts lb÷5

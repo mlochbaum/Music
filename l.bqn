@@ -1,6 +1,5 @@
-#! /usr/bin/env dbqn
+#! ./run_once
 
-•state•Eval•FChars"synth.bqn"
 lb←⌊⌾(÷⟜600)0.62×fr
 lp←⌊lb÷4.4
 Out ↩ max × 3 Softclip ÷⟜2

@@ -1,6 +1,5 @@
-#! /usr/bin/env dbqn
+#! ./run_once
 
-•state•Eval•FChars"synth.bqn"
 lm←14×lb←0.40×fr
 
 bass ← (2⋆24) ÷˜ ⊏ ¯1⊑Read "bass"
