@@ -19,7 +19,7 @@ s ← ∾ (0‿2‿1‿2×-lb÷2) ⌽¨ < s0
 
 (16×lb) Write ⟨k,d,r,s,b⟩
 
-song ← ∾ (32×lb)⊸((+⎉1´⥊⎉1¨)¨) ⟨
+WriteFull ∾ (32×lb)⊸((+⎉1´⥊⎉1¨)¨) ⟨
   ⟨b⟩
   ⟨k,0¨⊸∾⍟2 s0,b⟩
   ⟨k,s0,b⟩
@@ -34,4 +34,3 @@ song ← ∾ (32×lb)⊸((+⎉1´⥊⎉1¨)¨) ⟨
   ⟨k,d,b⟩
   ⟨k,b⟩
 ⟩
-"n.wav" wav.Write˜ Out Stereo song

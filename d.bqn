@@ -25,7 +25,7 @@ a ← 0.54 Pan 0.5 × (800 Hp1 0.4×(-lb÷6)⊸⌽)⊸+ ¯10‿4e3 LShelf ((1‿
 bf ← (1‿0‿¯3‿2 Poly I 3×lm) Fadeback (24×lm)⥊b
 pf ← (12×lm) ((4×⋆⟜0.6××˜∘¬)∘I∘⊣ × ⥊)˘ p
 in ← lm↑((lm-2×lb)⥊k) Add ((0⥊˜¯400+2.75×lb)∾3⊸Rep∾0¨∾2⊸Rep) (2×lb)↑k
-"d.wav" wav.Write˜ Out in ∾⎉1 +´ (Stereo ((24×lm)↑⊑⊸⥊⟜0∾-˜´⊸⥊)⎉1)¨´ ⟨
+WriteFull in ∾⎉1 +´ (Stereo ((24×lm)↑⊑⊸⥊⟜0∾-˜´⊸⥊)⎉1)¨´ ⟨
   lm×⟨0‿24, 0‿24, 1‿24, 2‿24, 4‿24, 4‿20, 10‿22, 12‿20, 16‿24⟩
      ⟨k   , bf  , s   , h   , c   , d   , pf   , a    , m    ⟩
 ⟩
