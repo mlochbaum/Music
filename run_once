@@ -1,4 +1,5 @@
 #! /usr/bin/env dbqn
 
 ⟨script⟩←•args
-(script⌾(1⊸⊑)•state) •BQN ∾ •FChars¨ "synth.bqn"‿script
+name←(∧`⌾⌽'/'⊸≠)⊸/script
+(name⌾(1⊸⊑)•state) •BQN ∾ •FChars¨ "synth.bqn"‿script
