@@ -26,11 +26,11 @@ f ← 0¨⊸(∾∾∾˜)˘ 0.56 Pan 2×w √∘|⊸×○((16×lb)⊸↑) (1.4×
 Out ↩ max × 3 Softclip 0.3×20⊸Hp2
 (64×lb) Write ⟨w,n,j,k,s,h,b,f⟩
 
-song ← (64×lb) (+⎉1´⥊⎉1¨)¨ ⟨
+song ← ⟨(28×lb)↑w⟩ ∾ (64×lb) (+⎉1´⥊⎉1¨)¨ ⟨
   ⟨w,  l⟩
   ⟨w,n,l⟩
-  ⟨w,n,l,0.3×+´((1(-≍+)<)×≠⥊¨h‿k˙)•math.Cos(3.3×π)×I-64×lb⟩
-  ⟨w,  l∾○((32×lb)⊸⥊)j,k,s⟩
+  ⟨w,n,l,0.3×+´((•math.Cos 1⊸(-≍+)⊸∾○< I∘≠×·×˜•math.Sin)×≠⥊¨⟨h,k,s⟩˙)(3.3×π)×I-64×lb⟩
+  ⟨w,  j,k,s⟩
   ⟨w,  j,k,s,h,b⟩
   ⟨w,n,j,k,s,h,b,f⟩
   ⟨w,n,j,k,s,  b⟩
