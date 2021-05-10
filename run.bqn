@@ -22,7 +22,7 @@ Tokenize←{
   k∨↩»⊸∧k<l←𝕩∊wc                            # Group words
   k∨↩»𝕩='•'
   ts←n∨¬k∨ign                               # Token start mask
-  ⟨𝕩⊔˜1-˜ign¬⊸×+`ts, /ts⟩
+  ⟨𝕩⊔˜1-˜(k<ign)¬⊸×+`ts, /ts⟩
 }
 Statements←{𝕊 tok‿pos:
   sep ← ⥊¨",⋄"∾lf
