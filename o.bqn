@@ -26,3 +26,13 @@ g ← ∾ {((÷0.8+65×I) × 2e3 Hp1 (2|π⋆˜↕) × Saw∘⥊⟜(8291-2×𝕩
 
 Out ↩ max × 4 Softclip ÷⟜2
 (8×lb) Write ⟨k,s,h,t,b⟩ # ⟨b,j,r,g⟩
+
+WriteFull ∾≍ Stereo¨ (÷⟜4⌾(2⊸⊑)(32×lb)¨)⊸((+⎉1´⥊⎉1¨)¨) ⟨
+  ⟨  k,s,h⟩
+  ⟨b,k,s,h,t⟩
+  ⟨b⟩
+  ⟨b,j,r⟩
+  ⟨b,j,r,g⟩
+  ⟨b,j,r,k,t⟩
+  ⟨b,j,  k,t⟩
+⟩
