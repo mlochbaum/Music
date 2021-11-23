@@ -59,7 +59,7 @@ RunAll←{
   pos‿tok‿in‿out ← Statements Tokenize 𝕩
   code ← (1-˜/𝕩(≠⊸«-⊢)0∾pos)⊔𝕩
   in ↩ ⍷¨in
-  id ← out((+`≠¨out)⍋⊐)⌾∾in  # TODO redefinition
+  id ← (/≠¨in)⊔out((+`≠¨out)⍋⊐)○∾in  # TODO redefinition
   in‿id /¨˜¨↩ <id<↕≠id
   li←⟨⟩ ⋄ @∘{li∾↩RunLine ⊏⟜li⌾(1⊸⊑)𝕩}˘ ⍉>⟨tok,id,code,in,out⟩
   li
