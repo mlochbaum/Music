@@ -18,11 +18,11 @@ Tokenize←{
   k←qe∨»≠`ab←a∨b                            # Token continuation mask
   {⟨⊑/𝕩,"Unclosed quote"⟩!0}⍟(∨´)(sm∨dm)>k∨a
 
-  ign←(𝕩∊ws)∨≠`ab∧c∨n                       # Ignored characters
+  ign←(𝕩∊ws)∨ii←≠`ab∧c∨n                    # Ignored characters
   k∨↩»⊸∧k<l←𝕩∊wc                            # Group words
   k∨↩»𝕩='•'
   ts←n∨¬k∨ign                               # Token start mask
-  ⟨𝕩⊔˜1-˜(k<ign)¬⊸×+`ts, /ts⟩
+  ⟨𝕩⊔˜1-˜(ii∨k<ign)¬⊸×+`ts, /ts⟩
 }
 Statements←{𝕊 tok‿pos:
   sep ← ⥊¨",⋄"∾lf
@@ -31,7 +31,7 @@ Statements←{𝕊 tok‿pos:
   top ← 0=+`-˝brak≡⌜tok
   g←(1-˜¬×1+`1⊸(»<⊢))top∧tok∊sep
   t‿p‿l ← g⊸⊔¨𝕩∾<top
-  io←(⊢+32×<⟜'a')<˘⍉>l{𝕩⊔˜2∾˜1-˜(ac∊˜⊑¨𝕩)⌈2×«𝕨∧𝕩∊asgn}¨t
+  io←(⊢+32×1="A["⊸⍋)<˘⍉>l{𝕩⊔˜2∾˜1-˜(ac∊˜⊑¨𝕩)⌈2×«𝕨∧𝕩∊asgn}¨t
   ⟨⊑¨p,t⟩∾io
 }
 
