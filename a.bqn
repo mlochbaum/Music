@@ -1,6 +1,6 @@
 #! ./run_once
 
-fr ↩ opt.freq ↩ 44100
+opt.SetFreq fr ↩ 44100
 lm←16×lb←0.4×fr
 
 HL ← {h‿l𝕊𝕩: h Hp1 l Lp1 𝕩}

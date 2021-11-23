@@ -8,8 +8,8 @@ Saw‿Triangle‿Square‿Pulse‿Sine‿White‿Brown‿Pink‿Pluck ← Load "
 Trans‿Note ← Load "scale"
 PanAP ← (¯1⊑≢∘⊢) ↑⎉1 (Load "panap").PanAP
 
-fr ← opt.freq ↩ 48000
-opt.FBytes ↩ •FBytes
+opt.SetFreq fr ← 48000
+opt.SetFBytes •fBytes
 this ← (∧`'.'⊸≠)⊸/•name
 Read ← wav.Read this∾"_"∾∾⟜".wav"
 max ← 1-˜2⋆1-˜¯1⊑opt.fmt
