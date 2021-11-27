@@ -35,7 +35,7 @@ Statements←{𝕊 tok‿pos:
   ⟨⊑¨p,t⟩∾io
 }
 
-Repl ← •BQN{(𝔽⊑)⎊(𝔽1⊸⊑)} "•ReBQN{repl⇐""strict""}"‿"•Eval"
+repl ← •BQN{(𝔽⊑)⎊(𝔽1⊸⊑)} "•ReBQN{repl⇐""strict""}"‿"•Eval"
 Eval ← (•args{(⊑𝕨)⌾(1⊸⊑)⍟(0<≠𝕨)𝕩}•state)⊸Repl
 Eval•FChars"synth.bqn"
 runLine←{
