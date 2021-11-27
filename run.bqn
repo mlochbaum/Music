@@ -28,10 +28,10 @@ Statements←{𝕊 tok‿pos:
   sep ← ⥊¨",⋄"∾lf
   brak← ⥊¨"{}⟨⟩"
   asgn← ⥊¨"←⇐"#↩
-  top ← 0=+`-˝brak≡⌜tok
-  g←(1-˜¬×1+`1⊸(»<⊢))top∧tok∊sep
-  t‿p‿l ← g⊸⊔¨𝕩∾<top
-  io←(⊢+32×1="A["⊸⍋⚇1)<˘⍉>l{𝕩⊔˜2∾˜1-˜(ac∊˜⊑¨𝕩)⌈2×«𝕨∧𝕩∊asgn}¨t
+  lev ← +`-˝brak≡⌜tok
+  g←(1-˜¬×1+`1⊸(»<⊢))(0=lev)∧tok∊sep
+  t‿p‿l ← g⊸⊔¨𝕩∾<»lev
+  io←(⊢+32×1="A["⊸⍋⚇1)<˘⍉>l{𝕩⊔˜2∾˜1-˜(ac∊˜⊑¨𝕩)×1+≠`«⊸≠⌾((⍋𝕨)⊸⊏)𝕩∊asgn}¨t
   ⟨⊑¨p,t⟩∾io
 }
 

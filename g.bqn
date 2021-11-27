@@ -1,6 +1,7 @@
 #! ./run_once
 
 lb←⌊⌾(÷⟜600)0.46×fr
+⟨Sin,Cos,Tan⟩ ← •math
 factorCounts ← •Import "factc.bqn"
 fa ← 10 Hp2 10 ÷˜ FactorCounts lb
 Poly ← {+⟜(𝕩⊸×)´𝕨}
@@ -21,7 +22,7 @@ h ← ((2×lb)⌽(3 Rep (lb÷6)⊸↑)∾30⊸Rep) ((÷1+11×I) × (¯0.7+2|π�
 
 b ← 70 Hp1 Clip ((¯2‿¯0.5‿10‿¯4 Poly 0.75 Saw⥊⟜(Note"F#1")) × 1+0.4×·Sine·-⟜(≠÷˜fr|+´) 2.5‿¯1‿20‿¯14 Poly I) 4×lb
 fs← 1-˜(-∾⟜(⊢˝)⥊0‿19+⌜0‿7‿14+⌜0‿2‿0‿7‿5‿12‿10) Trans top
-f ← 0¨⊸(∾∾∾˜)˘ 0.56 Pan 2×w √∘|⊸×○((16×lb)⊸↑) (1.4×top) Lp1 (lb÷4) ((0.4⋆·√I∘⊣) (≠⊸⥊˜×⊢) ·•math.Sin 2.8×Saw∘/) fs
+f ← 0¨⊸(∾∾∾˜)˘ 0.56 Pan 2×w √∘|⊸×○((16×lb)⊸↑) (1.4×top) Lp1 (lb÷4) ((0.4⋆·√I∘⊣) (≠⊸⥊˜×⊢) ·Sin 2.8×Saw∘/) fs
 
 Out ↩ max × 3 Softclip 0.3×20⊸Hp2
 (64×lb) Write ⟨w,n,j,k,s,h,b,f⟩
@@ -32,7 +33,7 @@ in ← (((√∘I×↑⟜w0)25×lb)+⎉1((0⥊˜3.6×lb)(⊣(⊢(1.5⋆˜I∘-�
 WriteFull ∾≍ ⟨in⟩ ∾ +`⊸+˝ (64×lb) Stereo∘(0+⎉1´⥊⎉1¨)¨ ⍉>⟨
   ⟨l⟩‿⟨(⥊⟜w×1-0.3××˜∘I∘-)64×lb⟩
   ⟨w⟩‿⟨n⟩
-  ⟨⟩‿⟨n,0.3×+´((•math.Cos 1⊸(-≍+)⊸∾○< I∘≠×·×˜•math.Sin)×≠⥊¨⟨h,k,s⟩˙)(3.3×π)×I-64×lb⟩
+  ⟨⟩‿⟨n,0.3×+´((Cos 1⊸(-≍+)⊸∾○< I∘≠×·×˜Sin)×≠⥊¨⟨h,k,s⟩˙)(3.3×π)×I-64×lb⟩
   ⟨-l,j,k,s⟩‿⟨⟩
   ⟨b⟩‿⟨h⟩
   ⟨n⟩‿⟨h,f⟩
