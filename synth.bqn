@@ -8,6 +8,8 @@ Saw‿Triangle‿Square‿Pulse‿Sine‿White‿Brown‿Pink‿Pluck ← Load "
 Trans‿Note ← Load "scale"
 PanAP ← (¯1⊑≢∘⊢) ↑⎉1 (Load "panap").PanAP
 
+⟨Sin,Cos,Tan⟩ ← •math
+
 opt.SetFreq fr ← 48000
 opt.SetFBytes •fBytes
 this ← (∧`'.'⊸≠)⊸/•name

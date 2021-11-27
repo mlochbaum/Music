@@ -1,7 +1,6 @@
 #! ./run_once
 
 lb←⌊⌾(÷⟜600)0.46×fr
-⟨Sin,Cos,Tan⟩ ← •math
 factorCounts ← •Import "factc.bqn"
 fa ← 10 Hp2 10 ÷˜ FactorCounts lb
 Poly ← {+⟜(𝕩⊸×)´𝕨}
