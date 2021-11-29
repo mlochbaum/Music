@@ -26,12 +26,13 @@ Tokenize←{
 }
 Statements←{𝕊 tok‿pos:
   sep ← ⥊¨",⋄"∾lf
-  brak← ⥊¨"{}⟨⟩"
+  brak←(⥊¨"{}⟨⟩")≡⌜tok
   asgn← ⥊¨"←⇐"#↩
-  lev ← +`-˝brak≡⌜tok
+  lev ← +`-˝brak
   g←(1-˜¬×1+`1⊸(»<⊢))(0=lev)∧tok∊sep
-  t‿p‿l ← g⊸⊔¨𝕩∾<»lev
-  io←(⊢+32×1="A["⊸⍋⚇1)<˘⍉>l{𝕩⊔˜2∾˜1-˜(ac∊˜⊑¨𝕩)×1+≠`«⊸≠⌾((⍋𝕨)⊸⊏)𝕩∊asgn}¨t
+  t‿p‿l‿b ← g⊸⊔¨𝕩∾⟨»lev,0=+`-˝2↑brak⟩
+  vg←l{(ac∊˜⊑¨𝕩)×1+≠`«⊸≠⌾((⍋𝕨)⊸⊏)𝕩∊asgn}¨t
+  io←(⊢+32×1="A["⊸⍋⚇1)<˘⍉>t⊔˜¨b(2∾˜1-˜1⊸+⊸⌊)¨vg
   ⟨⊑¨p,t⟩∾io
 }
 
