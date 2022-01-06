@@ -1,5 +1,5 @@
 #! /usr/bin/env bqn
 
-⟨script⟩←•args
-name←(∧`⌾⌽'/'⊸≠)⊸/script
-(name⌾(1⊸⊑)•state) •BQN ∾ •FChars¨ "synth.bqn"‿script
+⟨script⟩ ← •args
+name ← •path ≠⊸↓⍟(0⊣´⍷) script
+•path‿""‿name •BQN ∾ •FChars¨ "synth.bqn"‿script

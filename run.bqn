@@ -1,5 +1,10 @@
 # Synthesis script runner
 
+⟨script⟩ ← •args
+name ← •path ≠⊸↓⍟(0⊣´⍷) script
+repl ← •BQN{(𝔽⊑)⎊(𝔽1⊸⊑)} "•ReBQN{repl⇐""strict""}"‿"•Eval"
+Eval ← •path‿""‿name⊸Repl
+
 lf←@+10
 ac←"_"∾⥊"aA"+⌜↕26
 
@@ -36,9 +41,6 @@ Statements←{𝕊 tok‿pos:
   ⟨⊑¨p,t⟩∾io
 }
 
-repl ← •BQN{(𝔽⊑)⎊(𝔽1⊸⊑)} "•ReBQN{repl⇐""strict""}"‿"•Eval"
-Eval ← (•args{(⊑𝕨)⌾(1⊸⊑)⍟(0<≠𝕨)𝕩}•state)⊸Repl
-Eval•FChars"synth.bqn"
 runLine←{
   lines ← ⟨⟩      # Tokens and predecessor line IDs
   cache ← ⟨⟩      # Corresponding result namespace
@@ -66,4 +68,6 @@ RunAll←{
   li←⟨⟩ ⋄ @∘{li∾↩RunLine ⊏⟜li⌾(1⊸⊑)𝕩}˘ ⍉>⟨tok,id,code,in,out⟩
   li
 }
-•args {𝕏·∾·•FChars¨𝕨˙}⍟(0<≠∘⊣) runAll
+
+Eval •FChars "synth.bqn"
+RunAll •FChars∘script
