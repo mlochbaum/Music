@@ -1,6 +1,7 @@
 #! ./run_once
 
 lm←16×lb←⌊⌾(÷⟜300)0.38×fr
+Out ↩ (0.38×max)⊸×
 root ← Note "Bb2"
 
 HL ← {h‿l𝕊𝕩: h Hp1 l Lp1 𝕩}
@@ -31,7 +32,6 @@ s ← ∾ (0‿2‿1‿2×-lb÷2) ⌽¨ < s0
 kh← ((5×lb)>↕∘≠)⊸× k
 ap← ⥊0‿1‿0‿0×⌜a
 
-Out ↩ (max÷3)⊸×
 #(4×lm) Write ⟨k,d,s,bd,r,w,u⟩
 
 WriteFull ∾ ((lm×⊑)(+⎉1´⥊⎉1¨)1⊸↓)¨ ⟨

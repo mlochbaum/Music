@@ -1,6 +1,7 @@
 #! ./run_once
 
 lm←16×lb←⌊⌾(÷⟜100)0.78×fr
+Out ↩ max × 3 Softclip 0.45⊸×
 
 k1← lb ↑ 2e3 Lp1 ¯1.6×⋆-I 200
 k ← ⥊(4≠↕8) ×⌜ k1
