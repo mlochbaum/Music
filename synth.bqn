@@ -12,7 +12,7 @@ PanAP ← (¯1⊑≢∘⊢) ↑⎉1 (Load "panap").PanAP
 
 opt.SetFreq fr ← 48000
 opt.SetFBytes •fBytes
-this ← (∧`'.'⊸≠)⊸/•args
+this ← («·∨`⌾⌽'.'⊸=)⊸/•args
 Read ← wav.Read this∾"_"∾∾⟜".wav"
 max ← 1-˜2⋆1-˜¯1⊑opt.fmt
 Out ← (max÷2)⊸×
