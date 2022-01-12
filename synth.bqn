@@ -17,4 +17,4 @@ Read ← wav.Read this∾"_"∾∾⟜".wav"
 max ← 1-˜2⋆1-˜¯1⊑opt.fmt
 Out ← (max÷2)⊸×
 Write ← outfile wav.Write˜ ·{Out𝕩} ·Add (Stereo ⥊⎉1)¨
-WriteFull ← (this∾".wav") wav.Write˜ ·{Out𝕩} Stereo
+WriteFull ← (this∾".wav") wav.Write˜ ·{Out𝕩} (0⥊˜fr÷4) (∾∾⊣)⎉1 Stereo
