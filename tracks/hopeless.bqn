@@ -32,7 +32,7 @@ kh← ((5×lb)>↕∘≠)⊸× k
 ap← ⥊0‿1‿0‿0×⌜a
 
 Out ↩ (max÷3)⊸×
-(4×lm) Write ⟨k,d,s,bd,r,w,u⟩
+#(4×lm) Write ⟨k,d,s,bd,r,w,u⟩
 
 WriteFull ∾ ((lm×⊑)(+⎉1´⥊⎉1¨)1⊸↓)¨ ⟨
   ⟨1, w⟩

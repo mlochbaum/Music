@@ -19,7 +19,7 @@ ch ← (Note"a#") Trans˜ 'a'-˜>⟨
 p ← 0.54 Pan 0.25 × (0.1×(-lb÷2)⊸⌽)⊸+ Tan⁼⌾(3⊸×) ((0.1‿1.1‿¯1.5‿¯0.5‿1.5‿¯0.6 Poly I lb)⥊˜≢)⊸× +˝ (Triangle+0.1×Sine∘÷⟜2)∘(lb⊸/)˘ ch
 a ← 0.54 Pan 0.5 × (800 Hp1 0.4×(-lb÷6)⊸⌽)⊸+ ¯10‿4e3 LShelf ((1‿¯1‿2‿¯1 Poly I∘≠)⊸× ∾((×˜⌾¬I 100)Fadefront 2⋆¯5e3÷˜↕)¨2‿1‿2‿1‿2×lb÷8) (⥊˜⟜≢×⊢) Saw (lb÷8) / ⥊⍉3‿2‿1‿2/0‿1‿0‿2⊏ch
 
-(4×lm) Write ⟨k,c,s,h,m,b,d,p⟩
+#(4×lm) Write ⟨k,c,s,h,m,b,d,p⟩
 
 bf ← (1‿0‿¯3‿2 Poly I 3×lm) Fadeback (24×lm)⥊b
 pf ← (12×lm) ((4×⋆⟜0.6××˜∘¬)∘I∘⊣ × ⥊)˘ p
