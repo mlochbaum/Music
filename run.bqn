@@ -17,8 +17,8 @@ Tokenize←{
   s‿d←/¨2↑sm‿dm‿c‿n←𝕩⊸=¨"'""#"∾lf
   g←⍋q←∾⟨  s⋄¯1↓d⋄/c⟩ ⋄q↩g⊏q                # Open indices
   e← g⊏∾⟨2+s⋄ 1↓d⋄-⟜»∘⊏⟜(0∾+`c)⊸//n∾1⟩      # Matching close indices
-  Se←{(⊏˜𝕨)Se 1¨⌾((𝕩/𝕨)⊸⊏)𝕩}⍟(0=¯1⊑⊢)       # Mark reachable openings
-  a‿b←((≠𝕩)↑·/⁼((≠↑∾⟜≠Se 1∾0¨)q⍋e)⊸/)¨q‿e   # Open/close masks
+  Se←≠(>/⊢)∾⟜≠{(⊏˜𝕨)𝕊⍟(≠○(¯1⊸⊑))𝕩∾𝕩⊏𝕨}⟨0⟩˙  # Find reachable openings
+  a‿b←((≠𝕩)↑·/⁼(Se q⍋e)⊸⊏)¨q‿e              # Open/close masks
   qe←a∧∧⟜«dm                                # Quote Escape ""
   k←qe∨»≠`ab←a∨b                            # Token continuation mask
   {⟨⊑/𝕩,"Unclosed quote"⟩!0}⍟(∨´)(sm∨dm)>k∨a
