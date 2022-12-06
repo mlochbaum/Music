@@ -3,7 +3,7 @@
 ⟨script⟩ ← •args
 name ← •path ≠⊸↓⍟(0⊣´⍷) script
 repl ← •BQN{(𝔽⊑)⎊(𝔽1⊸⊑)} "•ReBQN{repl⇐""strict""}"‿"•Eval"
-Eval ← •path‿""‿name⊸Repl
+Eval ← •path‿"."‿name⊸Repl
 
 lf←@+10
 ac←"_"∾⥊"aA"+⌜↕26
